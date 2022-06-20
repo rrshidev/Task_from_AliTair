@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yml_catalog>
+	<categories>
+		<category id="1">Электроинструмент</category>
+		<category id="10" parentId="1">Дрели</category>
+		<category id="20" parentId="10">Безударные дрели</category>
+		<category id="11" parentId="1">Электролобзики</category>
+	</categories>
+	<offers>
+		<offer id="4356">
+			<price>2380</price>
+			<discount_price>2000</discount_price>
+			<categoryId>20</categoryId>
+			<picture>
+			http://www.super-tools.ru/u/images/products/8c/8cc3d54bb471729c9851b3b005542d69037f9b5c.jpg
+			</picture>
+			<picture>
+			http://www.super-tools.ru/u/images/products/df/df8941e1649662f7549f6d7a6a5d6ddbc75dbc1c.jpg
+			</picture>
+			<name>Дрель ДЭ-380ЭР/10 (50067)</name>
+			<description>
+			<![CDATA[
+			<ul><li>Модифицированная версия популярной дрели ДЭ-400ЭР/10.</li><li>Электронная регулировка частоты вращения шпинделя.</li><li>Регулировка частоты вращения нажатием на выключатель.</li><li>Реверс.</li><li>Выключатель с возможностью фиксации во включенном состоянии.</li><li>Быстрозажимной патрон.</li><li>Малый вес, компактный размер.</li><li>Клипса для фиксации на поясе.</li><li>Обрезиненный сетевой шнур длиной 2 метра.</li></ul>
+			]]>
+			</description>
+			<length>50</length>
+			<width>40</width>
+			<height>40</height>
+			<weight>3</weight>
+			<param name="Номинальная потребляемая мощность" unit="Вт">380</param>
+			<param name="Номинальное напряжение питания" unit="В">220</param>
+			<param name="Тип электродвигателя">коллекторный</param>
+			<param name="Масса нетто" unit="кг">1.2</param>
+			<param name="Длина упаковки" unit="мм">240</param>
+			<param name="Ширина упаковки" unit="мм">240</param>
+			<param name="Высота упаковки" unit="мм">70</param>
+			<param name="Назначение">быт.</param>
+			<param name="Частота вращения шпинделя на холостом ходу" unit="об/мин">3000</param>
+			<param name="Масса брутто" unit="кг">1.4</param>
+			<param name="Упаковка">картон</param>
+			<param name="Реверс">да</param>
+			<param name="Род тока">переменный</param>
+			<param name="Подсветка рабочей зоны">нет</param>
+			<param name="Максимальный диаметр сверления в стали на 1-й скорости" unit="мм">10</param>
+			<param name="Тип и стандарт патрона">бзп</param>
+			<param name="Максимальный диаметр хвостовика" unit="мм">10</param>
+			<param name="Минимальный диаметр хвостовика" unit="мм">0.8</param>
+			<param name="Номинальная частота вращения на 1-й скорости" unit="об/мин">3000</param>
+			<param name="Максимальный диаметр сверления в древесине на 1-й скорости" unit="мм">20</param>
+			<param name="Число скоростей">1</param>
+			<param name="Максимальный диаметр сверления в древесине" unit="мм">20</param>
+			<param name="Максимальный диаметр сверления в стали" unit="мм">10</param>
+			<param name="Дополнительная рукоятка">нет</param>
+			<param name="Регулировка частоты вращения">да</param>
+			<param name="Номинальная частота тока" unit="Гц">50</param>
+			<param name="Наличие и вид регулировки крутящего момента">нет</param>
+			<param name="Сверление с ударом">нет</param>
+			<param name="Максимальная частота вращения шпинделя на холостом ходу на 1-й скорости" unit="об/мин">3000</param>
+			<param name="Защитная муфта расцепления">нет</param>
+			<quantity>10</quantity>
+		</offer>
+		<offer id="4920">
+			<price>3150</price>
+			<discount_price>3000</discount_price>
+			<categoryId>11</categoryId>
+			<picture>
+			http://www.super-tools.ru/u/images/products/df/df8fd152acf9e3fe31197858f0dc67685f95180e.jpg
+			</picture>
+			<picture>
+			http://www.super-tools.ru/u/images/products/aa/aa939378f3bfc337a919f088cdb52a768d2237b3.jpg
+			</picture>
+			<picture>
+			http://www.super-tools.ru/u/images/products/37/3765e80fb737dfdaef1fcce5bdab7688166e2df1.jpg
+			</picture>
+			<picture>
+			http://www.super-tools.ru/u/images/products/ac/ac3a8102cc9c999692ce1ce54e12d4885dde1529.jpg
+			</picture>
+			<picture>
+			http://www.super-tools.ru/u/images/products/44/44bb059d06c9a2383f4079a8a84d098ebe1cd382.jpg
+			</picture>
+			<picture>
+			http://www.super-tools.ru/u/images/products/7e/7e29ed58b976c796ae2c1275d61dbd5c5dfd59bf.jpg
+			</picture>
+			<name>Лобзик ЛЭ-600/60Э (50220)</name>
+			<description>
+			<![CDATA[
+			<p>Лобзик ЛЭ-600/60Э – недорогой инструмент для выполнения прямых и фигурных распилов заготовок из древесины (толщиной до 60 мм), металла (толщиной до 8 мм) и пр. Модель имеет возможность плавной регулировки частоты ходов пилки от 500 до 2800 ход.мин., что важно, когда пользователь работает с различным материалом и меняет оснастку. Для установки нужных оборотов на корпусе расположено регулировочное колёсико. Опорная платформа может быть зафиксирована под углом 45 градусов (вправо или влево). Таким образом, можно выполнять наклонный пропил.</p><p>Компактные размеры лобзика и небольшой вес позволят работать даже продолжительное время без ощущения дискомфорта. Удобство использования обеспечивает ещё и противовес увеличенного размера для снижения уровня вибрации.Комплект поставки включает:</p><ul><li>Параллельный упор для работы вдоль края заготовки;</li><li>Прозрачный защитный экран, установленный перед оснасткой;</li><li>Адаптер для подключения пылесоса;</li><li>Шестигранник для замены пилок лобзика.</li></ul>
+			]]>
+			</description>
+			<length>50</length>
+			<width>30</width>
+			<height>30</height>
+			<weight>1</weight>
+			<param name="Номинальная потребляемая мощность" unit="Вт">600</param>
+			<param name="Номинальное напряжение питания" unit="В">220</param>
+			<param name="Масса нетто" unit="кг">1.9</param>
+			<param name="Длина упаковки" unit="мм">290</param>
+			<param name="Ширина упаковки" unit="мм">210</param>
+			<param name="Высота упаковки" unit="мм">80</param>
+			<param name="Назначение">быт.</param>
+			<param name="Масса брутто" unit="кг">2.22</param>
+			<param name="Возможность подключения пылеотсоса">да</param>
+			<param name="Упаковка">картон</param>
+			<param name="Максимальное число ходов на холостом ходу" unit="ход/мин">2800</param>
+			<param name="Минимальное число ходов на холостом ходу" unit="ход/мин">500</param>
+			<param name="Подсветка рабочей зоны">нет</param>
+			<param name="Угол наклона платформы влево/вправо" unit="°">45</param>
+			<param name="Наличие лазерного указателя">нет</param>
+			<param name="Наличие обдува рабочей зоны">нет</param>
+			<param name="Длина электрокабеля" unit="м">2.5</param>
+			<param name="Плавный пуск">нет</param>
+			<param name="Регулировка частоты вращения">да</param>
+			<param name="Бесключевая замена оснастки">нет</param>
+			<param name="Маятниковый ход">да</param>
+			<param name="Поддержание под нагрузкой постоянной частоты вращения">нет</param>
+			<param name="Глубина пропила в дереве" unit="мм">60</param>
+			<param name="Глубина пропила в металле" unit="мм">8</param>
+			<param name="Форма рукоятки">скоба</param>
+			<param name="Наличие защитного экрана">да</param>
+			<param name="Величина хода пилки" unit="мм">17</param>
+			<param name="Глубина пропила в алюминии" unit="мм">8</param>
+			<param name="Глубина пропила в стали" unit="мм">4</param>
+			<quantity>20</quantity>
+		</offer>
+	</offers>
+</yml_catalog>
