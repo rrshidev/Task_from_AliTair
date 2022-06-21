@@ -48,8 +48,16 @@ for id in list_our_id:
 
 #заливаем list_our_price в наш xml
 for price, i in zip(root_our.iter('price'), list_our_price):
-    for j in i:
-        price.set(j[0], j[1])
+    a, b = '', ''
+    for c in i.items():
+        j = str(c)
+        if j.isalpha() is True:
+            a = a + j
+            print(a)
+        elif j.isdigit() is True:
+            b = b + j
+            print(b)
+    price.set(a, b)
 
 
 tree_our.write('ourFile.xml')
