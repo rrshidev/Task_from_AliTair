@@ -7,8 +7,8 @@ root_our = tree_our.getroot()
 cnt = 1
 cntt = 1
 test_list = [0]
-dict_our_id, dict_client_id, dict_our_price,dict_client_price = {}, {}, {}, {}
-list_our_id, list_client_id, list_our_price, list_client_price = [], [], [], []
+dict_our_id, dict_client_id, dict_our_price,dict_client_price, dict_quantity = {}, {}, {}, {}, {}
+list_our_id, list_client_id, list_our_price, list_client_price, list_quantity = [], [], [], [], []
 
 # составили словарь айдишек
 for offer in root_our.iter('offer'):
@@ -30,16 +30,22 @@ for price_our in root_our.iter('price'):
     list_our_price.append(dict_our_price)
 for price_client in root_client.iter('price'):
     pars_BaseRetailPrice = price_client.attrib.get('BaseRetailPrice')
-    pars_BaseWholePrice = price_our.attrib.get('BaseWholePrice')
-    pars_RetailPrice = price_our.attrib.get('RetailPrice')
-    pars_WholePrice = price_our.attrib.get('WholePrice')
+    pars_BaseWholePrice = price_client.attrib.get('BaseWholePrice')
+    pars_RetailPrice = price_client.attrib.get('RetailPrice')
+    pars_WholePrice = price_client.attrib.get('WholePrice')
     dict_client_price = dict(BaseRetailPrice=pars_BaseRetailPrice, BaseWholePrice=pars_BaseWholePrice,
                           RetailPrice=pars_RetailPrice, WholePrice=pars_WholePrice)
     list_client_price.append(dict_client_price)
 
+# Словарь остатков
+for quantity in root_client.iter('assort'):
+    pars_sklad = quantity.attrib.get('sklad')
+    dict_quantity = dict(quantity=pars_sklad)
+    list_quantity.append(dict_quantity)
+
 #Собственно сам парсинг
 for id in list_our_id:
-    for prod_id in list_client_id:
+    for prod_id in zip(list_client_id):
         if id == prod_id:
             index_id = list_our_id.index(id)
             index_prod_id = list_client_id.index(prod_id)
@@ -47,17 +53,23 @@ for id in list_our_id:
 
 
 #заливаем list_our_price в наш xml
-for price, i in zip(root_our.iter('price'), list_our_price):
-    a, b = '', ''
-    for c in i.items():
+for price, i, quantity, n in zip(root_our.iter('price'), list_our_price, root_our.iter('quantity'), list_quantity):
+    a, b, d = '', '', ''
+    for c, f in zip(i.items(), n.items()):
         j = str(c)
+
         if j.isalpha() is True:
             a = a + j
-            print(a)
+
         elif j.isdigit() is True:
             b = b + j
-            print(b)
+        g = str(f)
+        if g.isdigit() is True:
+            d = d + g
+
     price.set(a, b)
+    quantity.text(d)
+
 
 
 tree_our.write('ourFile.xml')
