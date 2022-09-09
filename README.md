@@ -6,5 +6,5 @@ First --> start and run downloader.py
 Second --> start and run parsing.py
 Third --> start and run requester.py
 
-Second tast:
+Second task:
 Start and run pic.py
